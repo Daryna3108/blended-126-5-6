@@ -189,7 +189,7 @@ button {
 .about-us-container {
   border-radius: 50px;
   width: 580px;
-  height: 532px;
+  /* height: 532px; */
   background-color: #f3f3f3;
   padding: 80px 60px;
 }
