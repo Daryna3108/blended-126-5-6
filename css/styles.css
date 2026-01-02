@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-weight: 500;
@@ -41,10 +47,6 @@ button {
   width: 1180px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.section-container {
-  padding: 100px 0;
 }
 
 /* --------------HEADER------------ */
@@ -181,6 +183,10 @@ button {
 
 /* --------------ABOUTUS------------ */
 
+.about-us {
+  padding: 100px 0;
+}
+
 .about-us-row {
   display: flex;
   gap: 40px;
@@ -238,4 +244,112 @@ button {
   border-radius: 50px;
   width: 530px;
   min-height: 532px;
+}
+
+/* --------------CATALOG------------ */
+
+.catalog-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 40px;
+}
+
+.catalog-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 32px 23px;
+}
+
+.catalog-container {
+  max-width: 1150px;
+}
+
+.catalog-item {
+  background-color: #f3f3f3;
+  width: 368px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-image {
+  margin: 0 auto;
+}
+
+.catalog-container-wrap {
+  padding-top: 24px;
+}
+
+.catalog-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+
+.catalog-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+
+/* --------------ADVRT------------ */
+
+.advertisement {
+  padding: 100px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advrt-container {
+  border-radius: 30px;
+  background-color: #242525f2;
+  padding: 83px 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.advrt-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  max-width: 690px;
+}
+
+.color-accent {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advrt-link {
+  padding: 15px 43px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fbfbfb;
 }
